@@ -111,12 +111,12 @@
   },
   {
     "id": 12,
-    "title": "لا تحزن",
+    "title": "ديوان عمر بن أبي ربيعه",
     "author": "عائض القرني",
-    "category": "تنمية",
-    "price": 25,
+    "category": "شعر",
+    "price": 2,
     "image": "images/book12.jpg",
-    "description": "كتاب يقدم رسائل إيجابية ونصائح تساعد على تجاوز الهموم والتفاؤل بالحياة.",
+    "description": "شعر.",
     "available": true
   },
   {

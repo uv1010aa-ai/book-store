@@ -132,11 +132,11 @@
 ]
 {
   "id": 14,
-  "title": "اسم الكتاب",
-  "author": "اسم المؤلف",
-  "category": "تنمية",
-  "price": 30,
+  "title": "كيف تحفظ القرآن في عشر خطوات",
+  "author": "حسن بن أحمد همام",
+  "category": "تدريب",
+  "price": 10,
   "image": "images/book14.jpg",
-  "description": "وصف الكتاب هنا",
+  "description": "مهارات حفظ سريعه",
   "available": true
 }

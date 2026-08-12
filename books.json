@@ -91,22 +91,22 @@
   },
   {
     "id": 10,
-    "title": "رجال في الشمس",
-    "author": "غسان كنفاني",
-    "category": "أدب عربي",
-    "price": 20,
+    "title": "قصة مدينتين",
+    "author": "تشارلزديكنز",
+    "category": "أدب عالمي",
+    "price":9,
     "image": "images/book10.jpg",
-    "description": "رواية عربية خالدة تجسد معاناة الإنسان الفلسطيني ورحلة البحث عن الأمل.",
+    "description": "رواية .",
     "available": true
   },
   {
     "id": 11,
-    "title": "موسم الهجرة إلى الشمال",
-    "author": "الطيب صالح",
-    "category": "أدب عربي",
-    "price": 26,
+    "title": "أقبلت يا رمضان",
+    "author": "عائض القرني",
+    "category": "أتنمبة",
+    "price": 1,
     "image": "images/book11.jpg",
-    "description": "رواية عربية تناقش الهوية والثقافة والصراع بين الشرق والغرب.",
+    "description": ".",
     "available": true
   },
   {

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>متجر الكتب المستعملة</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h1>📚 متجر الكتب المستعملة</h1>
+        <p>أفضل الكتب بأسعار مناسبة</p>
+    </div>
+
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="#books">الكتب</a>
+        <a href="categories.html">الأقسام</a>
+        <a href="about.html">من نحن</a>
+        <a href="contact.html">اتصل بنا</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+<section class="hero">
+
+    <h2>مرحبًا بك 👋</h2>
+
+    <p>
+        كتب مستعملة بحالة ممتازة وأسعار تناسب الجميع.
+    </p>
+
+    <input type="search" id="search" placeholder="🔍 ابحث عن كتاب، مؤلف أو تصنيف..." autocomplete="off">
+
+</section>
+
+
+<section class="books" id="books">
+
+</section>
+
+
+</main>
+
+
+<aside class="cart" id="cart">
+    
+
+<h2>🛒 سلة المشتريات</h2>
+
+
+
+<p>
+عدد الكتب:
+<span id="cart-count">0</span>
+</p>
+
+
+
+
+
+
+
+
+<ul id="cart-items"></ul>
+
+
+<h3>
+الإجمالي:
+<span id="total-price">0</span>
+ريال
+</h3>
+
+
+<button id="clear-cart">
+إفراغ السلة
+</button>
+
+
+<a href="checkout.html" class="checkout-btn" id="checkout-btn">🛒 إتمام الطلب بأمان</a>
+
+<p class="secure-payment">
+    🔒 دفع آمن وسريع
+</p>
+
+
+</aside>
+
+
+<footer>
+
+<p>
+© 2026 متجر الكتب المستعملة - جميع الحقوق محفوظة
+</p>
+
+</footer>
+
+<div id="toast"></div>
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

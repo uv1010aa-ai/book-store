@@ -1,0 +1,1358 @@
+/* =========================================
+متجر الكتب المستعملة
+style.css - نسخة نظيفة ومحسّنة
+========================================= */
+
+:root {
+--primary: #1e3a5f;
+--primary-dark: #16314f;
+--secondary: #f4b400;
+--success: #2e7d32;
+--success-dark: #1b5e20;
+--danger: #d32f2f;
+--danger-dark: #a30000;
+--background: #f5f7fb;
+--white: #ffffff;
+--text: #333;
+--muted: #666;
+--border: #e8e8e8;
+--shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+--radius: 15px;
+}
+
+/* =========================================
+الأساسيات
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Tahoma, Arial, sans-serif;
+direction: rtl;
+background: var(--background);
+color: var(--text);
+line-height: 1.6;
+}
+
+button,
+input,
+textarea,
+select {
+font-family: inherit;
+}
+
+button {
+cursor: pointer;
+}
+
+/* =========================================
+رأس الموقع
+========================================= */
+
+header,
+.site-header {
+background: linear-gradient(135deg, var(--primary), #295b91);
+color: white;
+padding: 20px;
+text-align: center;
+box-shadow: var(--shadow);
+}
+
+.logo h1 {
+font-size: 34px;
+margin-bottom: 8px;
+}
+
+.logo p {
+opacity: 0.9;
+}
+
+/* =========================================
+القائمة
+========================================= */
+
+nav {
+margin-top: 20px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin: 0 8px;
+padding: 10px 18px;
+border-radius: 8px;
+transition: 0.3s;
+display: inline-block;
+}
+
+nav a:hover {
+background: white;
+color: var(--primary);
+}
+
+/* =========================================
+المحتوى الرئيسي
+========================================= */
+
+main {
+width: 90%;
+max-width: 1200px;
+margin: 40px auto;
+}
+
+/* =========================================
+القسم الترحيبي
+========================================= */
+
+.hero {
+text-align: center;
+margin-bottom: 40px;
+}
+
+.hero h2 {
+color: var(--primary);
+margin-bottom: 15px;
+}
+
+.hero p {
+margin-bottom: 25px;
+font-size: 18px;
+}
+
+/* =========================================
+البحث
+========================================= */
+
+.search-box {
+text-align: center;
+}
+
+.search-box label {
+display: block;
+margin-bottom: 8px;
+font-weight: bold;
+color: var(--primary);
+}
+
+#search {
+width: 420px;
+max-width: 95%;
+padding: 15px 20px;
+border-radius: 30px;
+border: 2px solid var(--primary);
+outline: none;
+font-size: 16px;
+background: white;
+transition: 0.3s;
+}
+
+#search:focus {
+box-shadow: 0 0 12px rgba(30, 58, 95, 0.3);
+}
+
+/* =========================================
+عنوان الأقسام
+========================================= */
+
+.section-title {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.section-title h2 {
+color: var(--primary);
+margin-bottom: 5px;
+}
+
+.section-title p {
+color: var(--muted);
+}
+
+/* =========================================
+شبكة الكتب
+========================================= */
+
+.books,
+.books-grid {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+gap: 18px;
+margin-top: 25px;
+}
+
+/* =========================================
+بطاقة الكتاب
+========================================= */
+
+.book-card {
+position: relative;
+background: var(--white);
+border: 1px solid var(--border);
+border-radius: 16px;
+overflow: hidden;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 12px 25px rgba(0, 0, 0, 0.16);
+}
+
+/* =========================================
+صورة الكتاب
+========================================= */
+
+.book-card img {
+width: 100%;
+height: 240px;
+object-fit: contain;
+display: block;
+background: #f8f8f8;
+transition: transform 0.3s ease;
+}
+
+.book-card:hover img {
+transform: scale(1.03);
+}
+
+/* =========================================
+معلومات الكتاب
+========================================= */
+
+.book-info {
+padding: 15px;
+text-align: center;
+}
+
+.book-info h3 {
+color: var(--primary);
+font-size: 18px;
+font-weight: 700;
+margin-bottom: 8px;
+min-height: 48px;
+overflow: hidden;
+line-height: 1.4;
+}
+
+.book-info p {
+color: var(--muted);
+font-size: 14px;
+margin: 6px 0;
+}
+
+/* =========================================
+حالة توفر الكتاب
+========================================= */
+
+.availability {
+color: var(--success) !important;
+font-size: 14px;
+font-weight: 600;
+margin: 8px 0;
+}
+
+/* =========================================
+شارة كتاب مستعمل
+========================================= */
+
+.used-badge {
+position: absolute;
+top: 12px;
+right: 12px;
+background: var(--secondary);
+color: #000;
+padding: 6px 12px;
+border-radius: 20px;
+font-size: 13px;
+font-weight: bold;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+z-index: 10;
+}
+
+/* =========================================
+السعر
+========================================= */
+
+.price {
+margin: 10px 0;
+color: var(--danger);
+font-size: 20px;
+font-weight: bold;
+}
+
+/* إذا كان السعر يحتوي على كلمة ريال من HTML
+فلا نضيفها مرة أخرى */
+
+/* =========================================
+زر إضافة للسلة
+========================================= */
+
+.book-card button {
+width: calc(100% - 20px);
+margin: 10px;
+padding: 11px;
+border: none;
+border-radius: 8px;
+background: var(--primary);
+color: white;
+font-size: 15px;
+transition: 0.3s;
+}
+
+.book-card button:hover {
+background: var(--secondary);
+color: #000;
+}
+
+/* =========================================
+لا توجد نتائج
+========================================= */
+
+.no-results {
+text-align: center;
+background: white;
+padding: 30px;
+margin-top: 25px;
+border-radius: var(--radius);
+color: var(--muted);
+}
+
+/* =========================================```css
+/* =========================================
+   🛒 سلة شراء صغيرة وأنيقة
+========================================= */
+
+.cart {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    width: 270px;
+    max-width: calc(100vw - 40px);
+    max-height: calc(100vh - 40px);
+
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 10px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border: 1px solid #eeeeee;
+
+    z-index: 9999;
+    box-sizing: border-box;
+
+    font-size: 13px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================
+   عنوان السلة
+========================================= */
+
+.cart h2 {
+    margin: 0;
+    padding: 5px 3px 9px;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    color: var(--primary, #333);
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+/* =========================================
+   قائمة المنتجات
+========================================= */
+
+#cart-items {
+    list-style: none;
+
+    margin: 8px 0;
+    padding: 0;
+
+    max-height: 190px;
+    overflow-y: auto;
+
+    scrollbar-width: thin;
+}
+
+
+/* شريط التمرير */
+
+#cart-items::-webkit-scrollbar {
+    width: 4px;
+}
+
+#cart-items::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   المنتج داخل السلة
+========================================= */
+
+#cart-items li {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    background: #f7f7f7;
+
+    margin-bottom: 6px;
+    padding: 6px;
+
+    border-radius: 9px;
+
+    border: 1px solid #eeeeee;
+}
+
+
+/* =========================================
+   صورة المنتج
+========================================= */
+
+.cart-image {
+    width: 42px;
+    height: 52px;
+
+    object-fit: contain;
+
+    background: #ffffff;
+
+    border-radius: 7px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   معلومات المنتج
+========================================= */
+
+.cart-info {
+    flex: 1;
+    min-width: 0;
+}
+
+
+.cart-info h4 {
+    margin: 0 0 3px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    color: var(--primary, #333);
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.cart-info p {
+    margin: 0;
+
+    font-size: 11px;
+
+    color: var(--muted, #777);
+}
+
+
+.cart-info strong {
+    display: block;
+
+    margin-top: 2px;
+
+    font-size: 12px;
+
+    color: #222;
+}
+
+
+/* =========================================
+   أزرار الكمية
+========================================= */
+
+.cart-buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 3px;
+
+    margin-top: 4px;
+}
+
+
+#cart-items button {
+    border: none;
+
+    min-width: 24px;
+    height: 23px;
+
+    padding: 2px 5px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 11px;
+
+    transition: 0.2s;
+}
+
+
+#cart-items button:hover {
+    transform: scale(1.05);
+}
+
+
+.plus {
+    background: #28a745;
+    color: #ffffff;
+}
+
+
+.minus {
+    background: #ffc107;
+    color: #222222;
+}
+
+
+.delete {
+    background: #dc3545;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   السلة فارغة
+========================================= */
+
+.cart-empty {
+    text-align: center;
+
+    color: var(--muted, #777);
+
+    padding: 15px 5px;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   ملخص السلة
+========================================= */
+
+.cart-summary {
+    border-top: 1px solid #eeeeee;
+
+    padding-top: 7px;
+
+    margin-top: 2px;
+}
+
+
+/* =========================================
+   الإجمالي
+========================================= */
+
+.total {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+#total-price {
+    color: var(--success, #28a745);
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   أزرار السلة
+========================================= */
+
+.cart-actions {
+    display: flex;
+
+    gap: 6px;
+
+    width: 100%;
+}
+
+
+/* جميع أزرار أسفل السلة */
+
+.cart-actions button,
+#clear-cart,
+#checkout-btn {
+    flex: 1;
+
+    padding: 7px 4px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+
+/* زر إفراغ السلة */
+
+#clear-cart {
+    background: #f1f1f1;
+
+    color: #dc3545;
+
+    border: 1px solid #eeeeee;
+}
+
+
+/* زر إتمام الطلب */
+
+#checkout-btn {
+    background: var(--primary, #333);
+
+    color: #ffffff;
+}
+
+
+#clear-cart:hover,
+#checkout-btn:hover {
+    transform: translateY(-1px);
+
+    opacity: 0.9;
+}
+
+
+/* =========================================
+   الجوال
+========================================= */
+
+@media (max-width: 480px) {
+
+    .cart {
+        top: 10px;
+        left: 10px;
+
+        width: 245px;
+
+        max-width: calc(100vw - 20px);
+
+        max-height: calc(100vh - 20px);
+
+        padding: 8px;
+
+        border-radius: 12px;
+    }
+
+
+    .cart h2 {
+        font-size: 15px;
+
+        padding-bottom: 7px;
+    }
+
+
+    #cart-items {
+        max-height: 165px;
+    }
+
+
+    .cart-image {
+        width: 38px;
+        height: 48px;
+    }
+
+
+    .cart-info h4 {
+        font-size: 11px;
+    }
+
+
+    .cart-info p {
+        font-size: 10px;
+    }
+
+
+    .cart-info strong {
+        font-size: 11px;
+    }
+
+
+    .cart-actions button,
+    #clear-cart,
+    #checkout-btn {
+        font-size: 10px;
+
+        padding: 6px 3px;
+    }
+}
+```
+
+
+#clear-cart,
+.checkout-btn {
+flex: 1;
+padding: 13px;
+border: none;
+border-radius: 9px;
+font-size: 16px;
+font-weight: bold;
+transition: 0.3s;
+}
+
+#clear-cart {
+background: var(--danger);
+color: white;
+}
+
+#clear-cart:hover {
+background: var(--danger-dark);
+}
+
+.checkout-btn {
+background: var(--success);
+color: white;
+}
+
+.checkout-btn:hover {
+background: var(--success-dark);
+transform: translateY(-2px);
+}
+
+/* =========================================
+الدفع
+========================================= */
+
+.checkout {
+max-width: 500px;
+margin: 40px auto;
+background: white;
+padding: 25px;
+border-radius: var(--radius);
+box-shadow: var(--shadow);
+}
+
+.checkout h2,
+.checkout h3 {
+color: var(--primary);
+margin-bottom: 15px;
+}
+
+.checkout input,
+.checkout textarea,
+.checkout select {
+width: 100%;
+padding: 12px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 8px;
+font-size: 16px;
+outline: none;
+}
+
+.checkout input:focus,
+.checkout textarea:focus,
+.checkout select:focus {
+border-color: var(--primary);
+}
+
+.checkout textarea {
+height: 120px;
+resize: vertical;
+}
+
+.checkout button {
+width: 100%;
+padding: 14px;
+background: var(--primary);
+color: white;
+border: none;
+border-radius: 8px;
+font-size: 18px;
+}
+
+.checkout button:hover {
+background: var(--primary-dark);
+}
+
+.secure-payment {
+text-align: center;
+font-size: 14px;
+color: var(--muted);
+margin-top: 10px;
+}
+
+/* =========================================
+واتساب
+========================================= */
+
+.whatsapp-btn {
+display: inline-block;
+padding: 12px 24px;
+background: #25d366;
+color: white;
+text-decoration: none;
+border-radius: 8px;
+font-size: 17px;
+font-weight: bold;
+}
+
+.whatsapp-btn:hover {
+background: #1ebe5d;
+}
+
+/* =========================================
+زر العودة
+========================================= */
+
+.back-home {
+display: inline-block;
+margin: 20px 0;
+padding: 12px 20px;
+background: #444;
+color: white;
+text-decoration: none;
+border-radius: 10px;
+font-size: 16px;
+}
+
+.back-home:hover {
+background: #222;
+}
+
+.back-shopping {
+display: inline-block;
+margin-top: 30px;
+padding: 12px 24px;
+background: var(--success);
+color: white;
+text-decoration: none;
+border-radius: 8px;
+font-size: 18px;
+}
+
+.back-shopping:hover {
+background: var(--success-dark);
+}
+
+/* =========================================
+صفحة نجاح الطلب
+========================================= */
+
+.success-page {
+text-align: center;
+margin-top: 80px;
+}
+
+/* =========================================
+إشعار Toast
+========================================= */
+
+#toast {
+position: fixed;
+bottom: 30px;
+right: 30px;
+background: var(--success);
+color: white;
+padding: 15px 20px;
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+opacity: 0;
+visibility: hidden;
+transform: translateY(10px);
+transition: 0.3s;
+z-index: 9999;
+}
+
+#toast.show {
+opacity: 1;
+visibility: visible;
+transform: translateY(0);
+}
+
+/* =========================================
+تفاصيل الكتاب
+========================================= */
+
+.book-details {
+background: white;
+max-width: 1000px;
+margin: 30px auto;
+padding: 30px;
+border-radius: var(--radius);
+box-shadow: var(--shadow);
+display: grid;
+grid-template-columns: 300px 1fr;
+gap: 35px;
+align-items: center;
+}
+
+.book-details img {
+width: 100%;
+max-width: 280px;
+max-height: 400px;
+height: auto;
+object-fit: contain;
+display: block;
+margin: auto;
+border-radius: 15px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.book-details h1 {
+color: var(--primary);
+font-size: 32px;
+margin-bottom: 15px;
+}
+
+.book-details h2 {
+color: var(--danger);
+margin: 15px 0;
+}
+
+.book-details p {
+font-size: 17px;
+line-height: 1.9;
+margin: 10px 0;
+}
+
+.book-details strong {
+color: var(--primary);
+}
+
+.book-details button {
+margin-top: 20px;
+padding: 14px 35px;
+background: var(--success);
+color: white;
+border: none;
+border-radius: 10px;
+font-size: 18px;
+transition: 0.3s;
+}
+
+.book-details button:hover {
+background: var(--success-dark);
+transform: translateY(-3px);
+}
+
+/* =========================================
+معلومات إضافية
+========================================= */
+
+.extra-info {
+background: white;
+padding: 25px;
+margin: 30px auto;
+border-radius: var(--radius);
+box-shadow: var(--shadow);
+max-width: 1000px;
+}
+
+.extra-info h2 {
+color: var(--primary);
+margin-bottom: 15px;
+}
+
+.extra-info ul {
+list-style: none;
+}
+
+.extra-info li {
+padding: 10px;
+border-bottom: 1px solid var(--border);
+font-size: 17px;
+}
+
+/* =========================================
+الكتب المشابهة
+========================================= */
+
+.related-books {
+max-width: 1000px;
+margin: 40px auto;
+}
+
+.related-books h2 {
+color: var(--primary);
+margin-bottom: 20px;
+}
+
+#related-container {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+}
+
+/* =========================================
+الفوتر
+========================================= */
+
+footer {
+margin-top: 60px;
+padding: 25px;
+background: var(--primary);
+color: white;
+text-align: center;
+}
+
+/* =========================================
+الشاشات المتوسطة
+========================================= */
+
+@media (max-width: 1400px) {
+.books,
+.books-grid {
+grid-template-columns: repeat(4, 1fr);
+}
+}
+
+@media (max-width: 1000px) {
+.books,
+.books-grid {
+grid-template-columns: repeat(3, 1fr);
+}
+}
+
+/* =========================================
+الهاتف
+========================================= */
+
+@media (max-width: 900px) {
+
+.cart {
+    position: static;
+    width: 90%;
+    max-width: 600px;
+    margin: 25px auto;
+}
+
+nav a {
+    margin: 5px;
+}
+
+.book-details {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.book-details img {
+    width: 220px;
+}
+
+#related-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+@media (max-width: 768px) {
+
+main {
+    width: 94%;
+    margin: 25px auto;
+}
+
+.books,
+.books-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.book-card img {
+    height: 220px;
+}
+
+.logo h1 {
+    font-size: 28px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.cart-actions {
+    flex-direction: column;
+}
+
+}
+
+@media (max-width: 480px) {
+
+.books,
+.books-grid {
+    grid-template-columns: 1fr;
+}
+
+.book-card img {
+    height: 280px;
+}
+
+#search {
+    width: 100%;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+nav a {
+    display: block;
+    width: 200px;
+    margin: 8px auto;
+}
+
+.cart {
+    width: 94%;
+}
+
+.book-details {
+    padding: 20px;
+}
+
+.book-details img {
+    width: 180px;
+}
+
+#related-container {
+    grid-template-columns: 1fr;
+}
+
+#toast {
+    right: 15px;
+    left: 15px;
+    bottom: 15px;
+    text-align: center;
+}
+
+}
+
+/* تحسينات المرحلة الأولى */
+.book-link{color:inherit;text-decoration:none;display:block}.add-btn{width:calc(100% - 20px);margin:10px;padding:11px;border:0;border-radius:8px;background:var(--primary);color:#fff;font-weight:bold}.static-badge{position:static;display:inline-block}.detail-add{margin-top:15px}.related-books{max-width:1000px;margin:40px auto}.related-books h2{color:var(--primary);margin-bottom:15px}#related-container{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.related-card{background:#fff;padding:12px;border-radius:12px;box-shadow:var(--shadow);text-decoration:none;color:var(--primary);text-align:center}.related-card img{width:100%;height:190px;object-fit:contain;background:#f8f9fb}.related-card strong,.related-card span{display:block;margin-top:7px}.related-card span{color:var(--danger);font-weight:bold}.order-success-box{margin:25px auto;padding:20px;background:#f7f8fa;border-radius:12px;max-width:320px}.order-success-box p{color:var(--muted)}.order-success-box strong{font-size:22px;color:var(--success)}.order-success-box hr{border:0;border-top:1px solid var(--border);margin:12px 0}.categories-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.category-card{background:#fff;text-decoration:none;color:var(--primary);text-align:center;padding:30px 15px;border-radius:var(--radius);box-shadow:var(--shadow)}.category-card span{font-size:38px}.contact-card{background:#fff;max-width:750px;margin:30px auto;padding:30px;border-radius:var(--radius);box-shadow:var(--shadow)}.contact-options{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:25px 0}.contact-options a{padding:20px;background:#f7f8fa;border-radius:12px;text-decoration:none;color:var(--primary);text-align:center}.form-note{color:var(--danger);font-size:13px}@media(max-width:900px){#related-container{grid-template-columns:repeat(2,1fr)}.categories-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:500px){#related-container,.categories-grid,.contact-options{grid-template-columns:1fr}}
+
+.category-cover{width:100%;height:180px;object-fit:contain;background:#f8f9fb;border-radius:10px;display:block;margin-bottom:10px}
+.book-card img,.book-detail-image,.related-card img{object-position:center}
+
+```css
+.cart {
+    position: fixed;
+
+    /* مكان السلة: يسار الشاشة */
+    top: 24px;
+    left: 15px;
+    right: auto;
+
+    /* حجم صغير */
+    width: 240px;
+    max-width: calc(100vw - 30px);
+
+    /* مساحة داخلية صغيرة */
+    padding: 10px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.13);
+
+    z-index: 999;
+
+    font-size: 13px;
+
+    box-sizing: border-box;
+}
+```
+
+#total-price {
+    color: var(--success);
+    font-size: 18px;
+}
+
+#clear-cart,
+#checkout-btn {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 12px;
+    border: 0;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+#clear-cart {
+    margin-bottom: 9px;
+    background: var(--danger);
+    color: #fff;
+}
+
+#checkout-btn {
+    background: var(--success);
+    color: #fff;
+}
+
+#clear-cart:hover,
+#checkout-btn:hover {
+    transform: translateY(-1px);
+    opacity: 0.94;
+}
+
+.secure-payment {
+    margin: 10px 0 0;
+    color: var(--muted);
+    font-size: 12px;
+    text-align: center;
+}
+
+/* السلة على الشاشات الصغيرة */
+@media (max-width: 900px) {
+    .cart {
+        position: static;
+        width: min(600px, 94%);
+        max-width: none;
+        margin: 24px auto;
+    }
+
+    #cart-items {
+        max-height: 420px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cart {
+        width: 94%;
+        padding: 14px;
+        border-radius: 14px;
+    }
+
+    #cart-items li {
+        padding: 9px;
+    }
+
+    .cart-image {
+        width: 52px;
+        height: 70px;
+        flex-basis: 52px;
+    }
+
+    .cart-info h4 {
+        font-size: 13px;
+    }
+
+    .cart h3 {
+        font-size: 15px;
+    }
+
+    #total-price {
+        font-size: 17px;
+    }
+}
+```css
+/* =========================================
+   أزرار السلة
+========================================= */
+
+#clear-cart,
+#checkout-btn {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 9px 8px;
+    margin-top: 7px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    text-align: center;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+/* إفراغ السلة */
+
+#clear-cart {
+    background: #f1f1f1;
+    color: #dc3545;
+    border: 1px solid var(--border);
+}
+
+
+/* إتمام الطلب */
+
+#checkout-btn {
+    background: var(--primary);
+    color: #fff;
+    border: 1px solid var(--primary);
+}
+
+
+/* تأثير عند المرور */
+
+#clear-cart:hover,
+#checkout-btn:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+
+/* رسالة الدفع الآمن */
+
+.cart .secure-payment {
+    margin: 7px 0 0 !important;
+    padding: 5px !important;
+
+    background: transparent !important;
+
+    color: var(--muted);
+    font-size: 11px;
+
+    text-align: center;
+}
+```

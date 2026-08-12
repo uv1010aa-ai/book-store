@@ -1,0 +1,8 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>أقسام الكتب</title><link rel="stylesheet" href="style.css"></head><body><header class="site-header"><div class="logo"><h1>📚 متجر الكتب المستعملة</h1><p>أقسام الكتب</p></div><nav><a href="index.html">الرئيسية</a><a href="categories.html">الأقسام</a><a href="about.html">من نحن</a><a href="contact.html">اتصل بنا</a></nav></header><main><section class="page-intro"><h2>📂 الأقسام</h2><p>اختر القسم الذي يناسبك.</p></section><section id="categories-grid" class="categories-grid">جاري التحميل...</section></main><footer><p>© 2026 متجر الكتب المستعملة</p></footer><script>fetch("books.json").then(r=>r.json()).then(bs=>{bs=bs.map(b=>({...b,category:String(b.category||"").trim()}));let cs=[...new Set(bs.map(b=>b.category))];document.getElementById("categories-grid").innerHTML=cs.map(c=>{
+ const first=bs.find(b=>b.category===c);
+ const count=bs.filter(b=>b.category===c).length;
+ return `<a class="category-card" href="index.html?category=${encodeURIComponent(c)}#books">
+   ${first ? `<img class="category-cover" src="${encodeURI(first.image)}" alt="كتب قسم ${c}">` : `<span>📚</span>`}
+   <h3>${c}</h3><p>${count} كتاب</p>
+ </a>`;
+}).join("")})</script></body></html>

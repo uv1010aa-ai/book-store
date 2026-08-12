@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "title": "المزعجون من الناس",
+    "author": "جوزيف دان",
+    "category": "تنمية",
+    "price": 25,
+    "image": "images/book1.jpg",
+    "description": "المزعجون من الناس كيف تتعامل معهم.",
+    "available": true
+  },
+  {
+    "id": 2,
+    "title": "نوافذ ميكروسوفت",
+    "author": "حسين حسن بركات",
+    "category": "كمبيوتر",
+    "price": 30,
+    "image": "images/book2.jpg",
+    "description": "تعليم وندوز",
+    "available": true
+  },
+  {
+    "id": 3,
+    "title": "الحكمة المكتسبة بالتعب",
+    "author": "جاثان جانوف",
+    "category": "إدارة",
+    "price": 20,
+    "image": "images/book3.jpg",
+    "description": "قصص حقيقية من دهاليز الادارة",
+    "available": true
+  },
+  {
+    "id": 4,
+    "title": "حتى لا يذهب عمرك سدى",
+    "author": "باسل شيخو",
+    "category": "مقالات",
+    "price": 35,
+    "image": "images/book4.jpg",
+    "description": "تذكير وتنبيه",
+    "available": true
+  },
+  {
+    "id": 5,
+    "title": "دليل التعامل في سوق الأسهم",
+    "author": "مايكل سنسير",
+    "category": "أوراق مالية",
+    "price": 28,
+    "image": "images/book5.jpg",
+    "description": "لاغنى عنه لكل ما تريد معلرفته عن سوق الأوراق المالية",
+    "available": true
+  },
+  {
+    "id": 6,
+    "title": "فايث ويمبن",
+    "author": "خطوة خطوه",
+    "category": "برمجه",
+    "price": 22,
+    "image": "images/book6.jpg",
+    "description": "تعلم html",
+    "available": true
+  },
+  {
+    "id": 7,
+    "title": "مهل",
+    "author": "سعود الشعلان",
+    "category": "روايه",
+    "price": 32,
+    "image": "images/book7.jpg",
+    "description": "رواية نفسية عميقة تستعرض الصراع الداخلي بين الجريمة والضمير.",
+    "available": true
+  },
+  {
+    "id": 8,
+    "title": "قوة الآن",
+    "author": "إيكهارت تول",
+    "category": "تطوير الذات",
+    "price": 24,
+    "image": "images/book8.jpg",
+    "description": "كتاب يدعو إلى التركيز على اللحظة الحالية لتحقيق السلام الداخلي.",
+    "available": true
+  },
+  {
+    "id": 9,
+    "title": "الأمير الصغير",
+    "author": "أنطوان دو سانت إكزوبيري",
+    "category": "روايات",
+    "price": 18,
+    "image": "images/book9.jpg",
+    "description": "قصة رمزية مليئة بالحكمة تتناول الصداقة والحب ومعنى الحياة.",
+    "available": true
+  },
+  {
+    "id": 10,
+    "title": "رجال في الشمس",
+    "author": "غسان كنفاني",
+    "category": "أدب عربي",
+    "price": 20,
+    "image": "images/book10.jpg",
+    "description": "رواية عربية خالدة تجسد معاناة الإنسان الفلسطيني ورحلة البحث عن الأمل.",
+    "available": true
+  },
+  {
+    "id": 11,
+    "title": "موسم الهجرة إلى الشمال",
+    "author": "الطيب صالح",
+    "category": "أدب عربي",
+    "price": 26,
+    "image": "images/book11.jpg",
+    "description": "رواية عربية تناقش الهوية والثقافة والصراع بين الشرق والغرب.",
+    "available": true
+  },
+  {
+    "id": 12,
+    "title": "لا تحزن",
+    "author": "عائض القرني",
+    "category": "تنمية",
+    "price": 25,
+    "image": "images/book12.jpg",
+    "description": "كتاب يقدم رسائل إيجابية ونصائح تساعد على تجاوز الهموم والتفاؤل بالحياة.",
+    "available": true
+  },
+  {
+    "id": 13,
+    "title": "دلل التعامل في سوق الأسهم",
+    "author": "مايكل سنسير",
+    "category": "أسهم",
+    "price": 25,
+    "image": "images/book13.jpg",
+    "description": "لاغنى عنه لكل ما تريد معلرفته عن سوق الأوراق المالية",
+    "available": true
+  }
+]

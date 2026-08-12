@@ -140,4 +140,15 @@
     "description": "",
     "available": true
   }
+   {
+    "id": 15,
+    "title": "كتاب جديد",
+    "author": "اسم المؤلف",
+    "category": "رواية",
+    "price": 20,
+    "image": "images/book15.jpg",
+    "description": "وصف الكتاب الجديد.",
+    "available": true
+  }
+] 
 ]

@@ -131,9 +131,9 @@
   }, 
   {
     "id": 14,
-    "title": "ذهب مع الريح",
-    "author": "مارغريت متشل",
-    "category": "رواية",
+    "title": ";كيف تحفظ القرآن في عشر خطوات",
+    "author": "حسن همام",
+    "category": "تدريب",
     "price": 5,
     "image": "images/book14.jpg",
     "description": "",
@@ -141,12 +141,12 @@
   },
    {
     "id": 15,
-    "title": "كتاب جديد",
+    "title": "بين الأصالة والحداثة",
     "author": "اسم المؤلف",
-    "category": "رواية",
+    "category": "أحمد فرج عقيلان",
     "price": 20,
     "image": "images/book15.jpg",
-    "description": "وصف الكتاب الجديد.",
+    "description": "دراسة بحثية.",
     "available": true
   }
 ] 

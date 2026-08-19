@@ -4,7 +4,7 @@
     "title": "المزعجون من الناس",
     "author": "جوزيف دان",
     "category": "تنمية",
-    "price": 15,
+    "price": 5,
     "image": "images/book1.jpg",
     "description": "المزعجون من الناس كيف تتعامل معهم.",
     "available": true
@@ -14,7 +14,7 @@
     "title": "نوافذ ميكروسوفت",
     "author": "حسين حسن بركات",
     "category": "كمبيوتر",
-    "price": 30,
+    "price": 7,
     "image": "images/book2.jpg",
     "description": "تعليم وندوز",
     "available": true
@@ -24,7 +24,7 @@
     "title": "الحكمة المكتسبة بالتعب",
     "author": "جاثان جانوف",
     "category": "إدارة",
-    "price": 20,
+    "price":8,
     "image": "images/book3.jpg",
     "description": "قصص حقيقية من دهاليز الادارة",
     "available": true
@@ -34,7 +34,7 @@
     "title": "حتى لا يذهب عمرك سدى",
     "author": "باسل شيخو",
     "category": "مقالات",
-    "price": 35,
+    "price": 2,
     "image": "images/book4.jpg",
     "description": "تذكير وتنبيه",
     "available": true
@@ -44,7 +44,7 @@
     "title": "دليل التعامل في سوق الأسهم",
     "author": "مايكل سنسير",
     "category": "أوراق مالية",
-    "price": 28,
+    "price": 7,
     "image": "images/book5.jpg",
     "description": "لاغنى عنه لكل ما تريد معلرفته عن سوق الأوراق المالية",
     "available": true
@@ -54,7 +54,7 @@
     "title": "فايث ويمبن",
     "author": "خطوة خطوه",
     "category": "برمجه",
-    "price": 22,
+    "price": 6,
     "image": "images/book6.jpg",
     "description": "تعلم html",
     "available": true
@@ -64,7 +64,7 @@
     "title": "مهل",
     "author": "سعود الشعلان",
     "category": "روايه",
-    "price": 32,
+    "price": 5,
     "image": "images/book7.jpg",
     "description": "رواية نفسية عميقة تستعرض الصراع الداخلي بين الجريمة والضمير.",
     "available": true
@@ -144,7 +144,7 @@
     "title": "بين الأصالة والحداثة",
     "author": "اسم المؤلف",
     "category": "أحمد فرج عقيلان",
-    "price": 20,
+    "price": 3,
     "image": "images/book15.jpg",
     "description": "دراسة بحثية.",
     "available": true
